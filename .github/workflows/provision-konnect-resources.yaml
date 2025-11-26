@@ -38,8 +38,8 @@ jobs:
           path: github-actions           
           role: ${{ vars.KONNECT_TEAM_NAME }}-gh-repo-role
           exportToken: true  # exports the env.VAULT_TOKEN
-          secrets: |
-            ${{ vars.KONNECT_TEAM_NAME }}-kv/data/system-accounts/sa-${{ vars.KONNECT_TEAM_NAME }} token | SYSTEM_ACCOUNT_TOKEN ;
+#          secrets: |
+#            ${{ vars.KONNECT_TEAM_NAME }}-kv/data/system-accounts/sa-${{ vars.KONNECT_TEAM_NAME }} token | SYSTEM_ACCOUNT_TOKEN ;
       
       # - name: Import system account Token from Vault
       #   id: import-token

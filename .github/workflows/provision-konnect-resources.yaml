@@ -50,7 +50,7 @@ jobs:
       #       ${{ vars.KONNECT_TEAM_NAME }}-kv/data/system-accounts/sa-${{ vars.KONNECT_TEAM_NAME }} token | SYSTEM_ACCOUNT_TOKEN ;
 
       - name: Provision Konnect Resources
-        uses: KongHQ-CX/kw-platform-ops/.github/actions/provision-konnect-resources@main
+        uses: dennyh89-demo/kw-platform-ops/.github/actions/provision-konnect-resources@main
         with:
           action: ${{ inputs.action }}
           konnect-resources: ${{ env.KONNECT_RESOURCES_FILE }}

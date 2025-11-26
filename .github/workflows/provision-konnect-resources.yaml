@@ -15,6 +15,7 @@ env:
   KONNECT_RESOURCES_FILE: ${{ github.workspace }}/konnect/resources.yaml
   VAULT_ADDR: ${{ vars.VAULT_ADDR }}
   AWS_ENDPOINT_URL: ${{ vars.AWS_ENDPOINT_URL }}
+  SYSTEM_ACCOUNT_TOKEN: ${{ vars.SYSTEM_ACCOUNT_TOKEN }}
 
 jobs:
   provision-konnect:

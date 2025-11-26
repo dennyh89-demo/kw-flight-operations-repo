@@ -61,4 +61,4 @@ jobs:
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           konnect-token: ${{ env.SYSTEM_ACCOUNT_TOKEN }}
           konnect-team-name: ${{ vars.KONNECT_TEAM_NAME }}
-          se-prefix: ${{vars.S3_PREFIX}}
+          s3-prefix: ${{vars.S3_PREFIX}}
